@@ -16,7 +16,7 @@ from email.mime.text import MIMEText
 r = requests.get('https://erasmus.sakarya.edu.tr/tr/duyuru/goruntule/liste')
 source = BeautifulSoup(r.content,"lxml")
 
-duyurular = source.find_all("h5",attrs={"class":"event-title"})
+duyurular = source.find_all("h5",attrs={"class":"event-title"}
 
 
 sendable = ''
